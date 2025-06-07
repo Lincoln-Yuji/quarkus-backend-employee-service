@@ -1,0 +1,15 @@
+[Unit]
+Description=Backend Employee Service
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/opt/quarkus-backend-employee-service
+EnvironmentFile=/etc/default/quarkus-backend-config
+ExecStart=/usr/bin/java -jar quarkus-backend-employee-service-1.0.0-SNAPSHOT-runner.jar
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
