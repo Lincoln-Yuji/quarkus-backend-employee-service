@@ -12,6 +12,11 @@ release.properties
 .settings/
 bin/
 
+# Terraform
+terraform/.terraform/*
+terraform/.terraform.lock.hcl
+terraform/terraform.*
+
 # IntelliJ
 .idea
 *.ipr

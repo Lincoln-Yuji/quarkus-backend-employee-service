@@ -19,8 +19,8 @@ sudo cp target/quarkus-backend-employee-service-1.0.0-SNAPSHOT-runner.jar /opt/q
 sudo cp src/main/resources/application.properties /opt/quarkus-backend-employee-service/
 
 # Copy the service file read by systemd to the system's service directory
-sudo cp scripts/quarkus-backend-employee.service /etc/systemd/system
-sudo cp scripts/quarkus-backend-config /etc/default/
+sudo cp terraform/quarkus-backend-employee.service /etc/systemd/system
+sudo cp terraform/quarkus-backend-config /etc/default/
 
 # Start the service
 sudo systemctl daemon-reload
